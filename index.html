@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d2a">
+  <title>汽車駕照模擬考</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="static-bank.js" defer></script>
+  <script src="video-bank.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="top"><div class="wrap brand"><span class="mark" aria-hidden="true">↱</span> 汽車駕照模擬考</div></header>
+  <main class="wrap">
+    <section id="welcome" class="hero">
+      <div class="intro">
+        <h1>汽車駕照<br>線上模擬考</h1>
+        <p>先看影片判斷路況，再作答靜態題。交卷後可逐題複習錯題與正確選項。</p>
+        <button id="start" class="primary">開始模擬考 <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="overview">
+        <div><strong>05</strong><span>危險感知影片題</span></div>
+        <div><strong>45</strong><span>靜態選擇題</span></div>
+        <p>每回隨機抽出 50 題，影片需連網播放。</p>
+      </div>
+    </section>
+    <section id="exam" hidden>
+      <div class="progress-head"><strong id="phase"></strong><span id="count" aria-live="polite"></span></div>
+      <progress id="progress" max="50" value="0" aria-label="作答進度"></progress>
+      <div class="exam-layout">
+        <article class="card question">
+          <p id="position" class="meta"></p>
+          <h1 id="prompt" tabindex="-1"></h1>
+          <div id="media"></div>
+          <fieldset id="options"><legend>請選擇一個答案</legend><div id="choices"></div></fieldset>
+          <div class="buttons">
+            <button id="prev">← 上一題</button>
+            <button id="next" class="primary">下一題 →</button>
+          </div>
+        </article>
+        <aside class="card navigator" aria-label="題號導覽">
+          <h2>題號導覽</h2>
+          <p>底色標示已作答的題目。</p>
+          <h3>影片題</h3><div id="video-nav" class="grid"></div>
+          <h3>靜態題</h3><div id="static-nav" class="grid"></div>
+          <button id="finish" class="submit">交卷</button>
+        </aside>
+      </div>
+    </section>
+    <section id="results" hidden>
+      <div class="card result-head">
+        <div><h1 id="result-title" tabindex="-1">考試結果</h1><p id="summary"></p></div>
+        <div class="score" id="score"></div>
+      </div>
+      <div class="result-bar"><h2>錯題複習</h2><button id="again" class="primary">再考一次</button></div>
+      <div id="review"></div>
+    </section>
+  </main>
+  <footer class="wrap">練習題庫來源 <a href="https://www.thb.gov.tw/News_Download.aspx?n=284&amp;sms=12823" target="_blank" rel="noopener noreferrer">交通部公路局</a></footer>
+  <dialog id="confirm" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h2 id="confirm-title">確定交卷？</h2>
+      <p id="confirm-text"></p>
+      <div class="buttons"><button value="cancel" autofocus>繼續作答</button><button value="submit" class="primary">確認交卷</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
