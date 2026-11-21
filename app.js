@@ -135,7 +135,7 @@ function refreshProgress() {
 function renderQuestion(moveFocus = true) {
   const q = paper[current];
   const isVideo = current < videoCount;
-  byId("phase").textContent = isVideo ? "危險感知影片題" : "靜態選擇題";
+  byId("phase").textContent = isVideo ? "危險感知影片題" : "一般選擇題";
   byId("position").textContent = "第 " + (current + 1) + " 題／共 " + paper.length + " 題";
   byId("prompt").textContent = q.prompt;
   const continuation = byId("continuation");
@@ -157,7 +157,7 @@ function renderQuestion(moveFocus = true) {
   }));
   byId("prev").disabled = current === 0;
   byId("next").textContent = current === paper.length - 1 ? "交卷" :
-    current === videoCount - 1 ? "進入靜態題 →" : "下一題 →";
+    current === videoCount - 1 ? "進入一般題 →" : "下一題 →";
   refreshProgress();
   if (moveFocus) {
     byId("prompt").focus({ preventScroll: true });
