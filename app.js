@@ -1,7 +1,8 @@
 "use strict";
 
 const videoCount = 5;
-const staticCount = 45;
+const staticCountPerSection = 15;
+const staticSections = [[1, 424], [425, 654], [655, 1090]];
 const byId = id => document.getElementById(id);
 const exam = byId("exam");
 const results = byId("results");
@@ -170,7 +171,10 @@ function goTo(index) {
 }
 
 function start() {
-  paper = [...sample(window.videoBank, videoCount), ...sample(window.staticBank, staticCount)];
+  const staticQuestions = staticSections.flatMap(([first, last]) =>
+    sample(window.staticBank.filter(q => q.id >= first && q.id <= last), staticCountPerSection)
+  );
+  paper = [...sample(window.videoBank, videoCount), ...sample(staticQuestions, staticQuestions.length)];
   answers = paper.map(() => null);
   current = 0;
   navigation = paper.map((_, index) => {
