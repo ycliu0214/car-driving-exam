@@ -139,6 +139,9 @@ function renderQuestion(moveFocus = true) {
   byId("phase").textContent = isVideo ? "危險感知影片題" : "靜態選擇題";
   byId("position").textContent = "第 " + (current + 1) + " 題／共 " + paper.length + " 題";
   byId("prompt").textContent = q.prompt;
+  const continuation = byId("continuation");
+  continuation.textContent = q.continuation ?? "";
+  continuation.hidden = !q.continuation;
   byId("media").replaceChildren(...(isVideo ? [videoPlayer(q)] : q.images ? [figures(q)] : []));
   byId("choices").replaceChildren(...q.options.map((_, index) => {
     const label = element("label", "", "option");
@@ -226,6 +229,7 @@ function reviewItem(q, index) {
     if (correct || chosen) content.append(element("strong", correct ? "　✓ 正確答案" : "　你的答案"));
     item.append(row);
   });
+  if (q.continuation) item.append(element("p", q.continuation, "question-continuation"));
   return item;
 }
 
