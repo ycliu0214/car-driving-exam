@@ -251,6 +251,11 @@ byId("start").addEventListener("click", start);
 byId("again").addEventListener("click", start);
 byId("prev").addEventListener("click", () => goTo(current - 1));
 byId("next").addEventListener("click", () => current === paper.length - 1 ? askToSubmit() : goTo(current + 1));
+byId("jump").addEventListener("click", () => {
+  const navigator = byId("navigator");
+  navigator.focus({ preventScroll: true });
+  navigator.scrollIntoView({ block: "start" });
+});
 byId("finish").addEventListener("click", askToSubmit);
 dialog.addEventListener("close", () => {
   if (dialog.returnValue === "submit") submit();

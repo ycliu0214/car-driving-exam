@@ -35,12 +35,13 @@
           <div id="media"></div>
           <fieldset id="options"><legend>請選擇一個答案</legend><div id="choices"></div></fieldset>
           <p id="continuation" class="question-continuation" hidden></p>
-          <div class="buttons">
+          <div class="buttons question-controls">
             <button id="prev">← 上一題</button>
+            <button id="jump" class="mobile-jump">題號</button>
             <button id="next" class="primary">下一題 →</button>
           </div>
         </article>
-        <aside class="card navigator" aria-label="題號導覽">
+        <aside id="navigator" class="card navigator" aria-label="題號導覽" tabindex="-1">
           <h2>題號導覽</h2>
           <p>底色標示已作答的題目。</p>
           <h3>影片題</h3><div id="video-nav" class="grid"></div>
