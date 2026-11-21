@@ -202,8 +202,11 @@ function askToSubmit() {
 
 function reviewItem(q, index) {
   const item = element("article", "", "card review-item");
-  const type = q.code ? "影片題 " + q.id : "靜態題庫第 " + q.id + " 題";
-  item.append(element("p", "第 " + (index + 1) + " 題 · " + type, "meta"), element("h3", q.prompt));
+  const source = q.code
+    ? "原始影片題庫 " + q.id + "（影片編號 " + q.code + "）"
+    : "原始筆試題庫第 " + q.id + " 題";
+  const reference = "本回第 " + (index + 1) + " 題 · " + source;
+  item.append(element("p", reference, "meta"), element("h3", q.prompt));
   if (q.images) item.append(figures(q));
   if (q.code) {
     const detail = element("details");
