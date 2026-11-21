@@ -9,7 +9,8 @@ window.videoBank = [
       "直行車優先，預判對方會讓我先行。"
     ],
     "code": "202601",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOJhYA7zb0ddUn5cirG3IEQPtV5q3/w0XjZBCrh6cqzzFZIhd5a-DpOcCtAxnM-ibGA2PqiOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOJhYA7zb0ddUn5cirG3IEQPtV5q3/w0XjZBCrh6cqzzFZIhd5a-DpOcCtAxnM-ibGA2PqiOw0",
+    "video": "videos/2026 01.mp4"
   },
   {
     "id": "危感-02",
@@ -21,7 +22,8 @@ window.videoBank = [
       "減速並預作停車之準備。"
     ],
     "code": "202602",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOLWWVu0g030ejVfAj1FuItqdfmeU/qNiV4LIsdz6xRJJd0Uj9tom9NXRtarGw-PrKAvgujOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOLWWVu0g030ejVfAj1FuItqdfmeU/qNiV4LIsdz6xRJJd0Uj9tom9NXRtarGw-PrKAvgujOw0",
+    "video": "videos/2026 02.mp4"
   },
   {
     "id": "危感-03",
@@ -33,7 +35,8 @@ window.videoBank = [
       "對方不一定會影響我，不必理會。"
     ],
     "code": "202603",
-    "share": "https://space2.thb.gov.tw/d/s/18WqUzA66D7uWe8DGp9LpkNQkBbovX74/gmRmhBleoWTWGUY6QvoWrFKW7YKXpYx0-cbsgrk8EQA0"
+    "share": "https://space2.thb.gov.tw/d/s/18WqUzA66D7uWe8DGp9LpkNQkBbovX74/gmRmhBleoWTWGUY6QvoWrFKW7YKXpYx0-cbsgrk8EQA0",
+    "video": "videos/2026 03.mp4"
   },
   {
     "id": "危感-04",
@@ -45,7 +48,8 @@ window.videoBank = [
       "因為我是綠燈，應立即起步並按喇叭提醒對方停車。"
     ],
     "code": "202604",
-    "share": "https://space2.thb.gov.tw/d/s/18WqV0v64BdGmS7Xzd5ZREbF4ff7J0sL/sFnMTn9_OBH29Ify0dFm7cly_Nr1HPDz-FLzg8lQEQA0"
+    "share": "https://space2.thb.gov.tw/d/s/18WqV0v64BdGmS7Xzd5ZREbF4ff7J0sL/sFnMTn9_OBH29Ify0dFm7cly_Nr1HPDz-FLzg8lQEQA0",
+    "video": "videos/2026 04.mp4"
   },
   {
     "id": "危感-05",
@@ -57,7 +61,8 @@ window.videoBank = [
       "路旁的停車。"
     ],
     "code": "202605",
-    "share": "https://space2.thb.gov.tw/d/s/18RCO8LsZho7HoGZ4M1DmMMVbMnhK4di/DElLZdVFNCTfxFa5uxfVRdGn9Z-2FVqi-kbQgBDejOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCO8LsZho7HoGZ4M1DmMMVbMnhK4di/DElLZdVFNCTfxFa5uxfVRdGn9Z-2FVqi-kbQgBDejOw0",
+    "video": "videos/2026 05.mp4"
   },
   {
     "id": "危感-06",
@@ -69,7 +74,8 @@ window.videoBank = [
       "按鳴喇叭，提醒行人本車先行。"
     ],
     "code": "202606",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOAPkroD3cj86oVvdHh6eAzfbDwru/t_HVnpaqDHFTtPAFGdL04-nhnwYk09ig-C7WgnUCjOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOAPkroD3cj86oVvdHh6eAzfbDwru/t_HVnpaqDHFTtPAFGdL04-nhnwYk09ig-C7WgnUCjOw0",
+    "video": "videos/2026 06.mp4"
   },
   {
     "id": "危感-07",
@@ -81,7 +87,8 @@ window.videoBank = [
       "預先減速，讓行人先通行。"
     ],
     "code": "202607",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOCaRX28pQteNbFtxtHYUPbBi84xy/3oL6s21agbgdR5rV9HH7chZJwOSiTsD0-kLXAhEqjOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOCaRX28pQteNbFtxtHYUPbBi84xy/3oL6s21agbgdR5rV9HH7chZJwOSiTsD0-kLXAhEqjOw0",
+    "video": "videos/2026 07.mp4"
   },
   {
     "id": "危感-08",
@@ -93,7 +100,8 @@ window.videoBank = [
       "按鳴喇叭或連續變換燈光，提醒對方你要先行。"
     ],
     "code": "202608",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOEqNl69CLEiUJONpbCaxLmCl6P9W/EILxeP4ao1SJ6oBisHfPSQDDKtWGHyf9-2bUg6lGjOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOEqNl69CLEiUJONpbCaxLmCl6P9W/EILxeP4ao1SJ6oBisHfPSQDDKtWGHyf9-2bUg6lGjOw0",
+    "video": "videos/2026 08.mp4"
   },
   {
     "id": "危感-09",
@@ -105,7 +113,8 @@ window.videoBank = [
       "以上皆是。"
     ],
     "code": "202609",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOGIn022s96VEEEmpm41FTs0bSJqe/ebOEiu66XWZGZMXiOTEYNr8zqRutUXpt-gLZgqlyjOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOGIn022s96VEEEmpm41FTs0bSJqe/ebOEiu66XWZGZMXiOTEYNr8zqRutUXpt-gLZgqlyjOw0",
+    "video": "videos/2026 09.mp4"
   },
   {
     "id": "危感-10",
@@ -117,6 +126,7 @@ window.videoBank = [
       "以上皆是。"
     ],
     "code": "202610",
-    "share": "https://space2.thb.gov.tw/d/s/18RCOHWihKbDJm2hAaqdqCjJXj54t40x/U174b78Ed4R-7xaae5f6OSyNxdFBfn4O--LagTGajOw0"
+    "share": "https://space2.thb.gov.tw/d/s/18RCOHWihKbDJm2hAaqdqCjJXj54t40x/U174b78Ed4R-7xaae5f6OSyNxdFBfn4O--LagTGajOw0",
+    "video": "videos/2026 10.mp4"
   }
 ];

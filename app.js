@@ -73,16 +73,17 @@ function videoPlayer(q) {
     const player = element("video");
     player.controls = true;
     player.playsInline = true;
-    player.preload = "metadata";
+    player.preload = "none";
     player.setAttribute("aria-label", "危險感知影片 " + q.code);
-    player.addEventListener("error", fallback, { once: true });
+    player.addEventListener("error", () => {
+      if (slot.firstElementChild === player) fallback();
+    }, { once: true });
     player.src = source;
     slot.replaceChildren(player);
   }
 
   function showLocal(source) {
     showVideo(source, () => {
-      if (slot.querySelector("video")?.src !== source) return;
       note.prepend("這個影片檔無法播放。");
       showShare();
     });
