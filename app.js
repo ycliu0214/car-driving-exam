@@ -11,7 +11,6 @@ let paper = [];
 let answers = [];
 let navigation = [];
 let current = 0;
-let furthestVideo = 0;
 
 function sample(bank, count) {
   const pool = bank.slice();
@@ -126,7 +125,6 @@ function refreshProgress() {
   byId("progress").value = answered;
   navigation.forEach((button, index) => {
     button.classList.toggle("answered", answers[index] !== null);
-    button.disabled = furthestVideo < videoCount && index > furthestVideo;
     button.setAttribute("aria-label", "第 " + (index + 1) + " 題，" + (answers[index] === null ? "未作答" : "已作答"));
     if (index === current) button.setAttribute("aria-current", "step");
     else button.removeAttribute("aria-current");
@@ -168,7 +166,6 @@ function renderQuestion(moveFocus = true) {
 
 function goTo(index) {
   current = index;
-  if (index === furthestVideo + 1 && furthestVideo < videoCount) furthestVideo = index;
   renderQuestion();
 }
 
@@ -176,7 +173,6 @@ function start() {
   paper = [...sample(window.videoBank, videoCount), ...sample(window.staticBank, staticCount)];
   answers = paper.map(() => null);
   current = 0;
-  furthestVideo = 0;
   navigation = paper.map((_, index) => {
     const button = element("button", String(index + 1));
     button.addEventListener("click", () => goTo(index));
